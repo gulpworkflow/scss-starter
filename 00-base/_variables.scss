@@ -1,0 +1,55 @@
+// Typography
+$base-font-family: "Helvetica Neue", Helvetica, sans-serif !default;
+$heading-font-family: $base-font-family !default;
+
+// Font Sizes
+$root-font-size: 16px;
+$base-font-size: 1rem;
+
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$brand-primary-color: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// UI Colors
+$ui-color-action: $brand-primary-color !default;
+$ui-color-success: #39b25d !default;
+$ui-color-info: #3498db !default;
+$ui-color-warning: #f3a51b !default;
+$ui-color-error: #ee5f49 !default;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: none; // eg: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: none; //eg: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms !default;
+$base-timing: ease-out !default;
+
+$fastDuration: 100ms !default;
+$mediumDuration: 300ms !default;
+$slowDuration: 500ms !default;
