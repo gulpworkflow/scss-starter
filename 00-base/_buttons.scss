@@ -5,12 +5,12 @@ slug: buttons;
 description: [
 
 #Buttons
-### buttons are done as a SASS map
+### buttons are done as a SASS variable, eg:
+$all-buttons: '.btn, button, input[type=submit], input[type=button]';
 
 ];  
 =====//
  */
-
 
 #{$all-buttons} {
   appearance: none;

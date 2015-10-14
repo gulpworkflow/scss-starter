@@ -3,12 +3,12 @@
 // Copyright 2013-2015 thoughtbot, inc.
 // MIT License
 
-@import "variables";
+@import "00-base/variables";
 
 // base UI
-@import "grid";
-@import "buttons";
-@import "forms";
-@import "lists";
-@import "tables";
-@import "typography";
+@import "00-base/grid/all";
+@import "00-base/buttons";
+@import "00-base/forms";
+@import "00-base/lists";
+@import "00-base/tables";
+@import "00-base/typography";
