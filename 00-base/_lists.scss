@@ -13,7 +13,7 @@ ol {
   padding: 0;
 
   &%default-ul {
-    list-style-type: disc;
+    list-style-type: circle;
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
@@ -23,6 +23,14 @@ ol {
     margin-bottom: $small-spacing;
     padding-left: $base-spacing;
   }
+}
+
+ul.default {
+  @extend %default-ul;
+}
+
+ol.default {
+  @extend %default-ol;
 }
 
 dl {

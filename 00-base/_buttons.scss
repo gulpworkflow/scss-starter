@@ -23,7 +23,7 @@ $all-buttons: '.btn, button, input[type=submit], input[type=button]';
   font-family: $base-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: $base-font-family-bold;
   line-height: 1;
   padding: $small-spacing $base-spacing;
   text-decoration: none;

@@ -1,14 +1,38 @@
-// Bitters 1.1.0
-// http://bitters.bourbon.io
-// Copyright 2013-2015 thoughtbot, inc.
+// ripe scss 
+// http://ripe.com/
 // MIT License
 
+// ===================================================================================
+// Variables
+// -------------
 @import "00-base/variables";
 
-// base UI
 @import "00-base/grid/all";
+
+// ===================================================================================
+// Utilities
+// -------------
+@import "00-base/utilities/clear";
+@import "00-base/utilities/responsive";
+@import "00-base/utilities/positioning";
+@import "00-base/utilities/z-index";
+
+// ===================================================================================
+// Base
+// -------------
+
 @import "00-base/buttons";
 @import "00-base/forms";
 @import "00-base/lists";
 @import "00-base/tables";
 @import "00-base/typography";
+
+// ===================================================================================
+// Vendor
+// -------------
+/* Silence is Golden */
+
+// ===================================================================================
+// Modules
+// -------------
+//@import "03-modules/**/*";

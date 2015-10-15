@@ -32,8 +32,7 @@ $enable-flex:               false !default;
 // Disable if you use semantic approach, saves filesize
 $enable-grid-classes:       false !default;
 
-
-// Container sizes
+// Fixed Width Container sizes
 // -----
 // Define the maximum width of `.container` for different screen sizes.
 $container-max-widths: (
@@ -43,30 +42,15 @@ $container-max-widths: (
   xl: 63rem  // 1140
 ) !default;
 
-
 /* ========================================================================= */
 // Dependencies
 // -------------
 @import 'mixins-grid-framework';
 @import 'mixins-breakpoints';
 
-
 /* ========================================================================= */
 // Default Containers
-//
-// Set the container width, and override it for fixed navbars in media queries.
-.container {
-  position: relative;
-  padding-top: $spacer;
-  @include make-container();
-}
-
-.row {
-  padding-bottom: $grid-gutter-width;
-  padding-top: $grid-gutter-width;
-  padding-left: 13.3%;
-  padding-right: 10%;
-  @include make-row();
-}
+// -------------
+@import 'default-containers';
 
 
