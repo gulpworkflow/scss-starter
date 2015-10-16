@@ -3,15 +3,29 @@
 name: "Buttons";
 slug: buttons;
 description: [
-
-#Buttons
-### buttons are done as a SASS variable, eg:
-$all-buttons: '.btn, button, input[type=submit], input[type=button]';
-
+  #Buttons
+  ### buttons are done as a SASS variable, eg:
+  $all-buttons: '.btn, button, input[type=submit], input[type=button]';
 ];  
+usage: [
+  <a class="btn">I'm a link button</a>
+  <input type="submit">I'm a submit button</a>
+  <button>I'm a button button</a>
+];
 =====//
  */
 
+// ===================================================================================
+//  Variables
+// -------------
+// CSS selectors - buttons                   
+$all-buttons:     '.btn, 
+                   button, 
+                   input[type=submit], 
+                   input[type=button]' !default;
+
+// ===================================================================================
+//  Button Styles
 #{$all-buttons} {
   appearance: none;
   background-color: $ui-color-action;

@@ -56,10 +56,10 @@ $grid-columns:               24;
 // Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width:          1.5rem;
 // Use flexbox grid?
-$enable-flex:               true;
+$enable-flex:                false;
 // Generate classes for all grid settings
 // Disable if you use semantic approach, it reduces the filesize
-$enable-grid-classes:       false;
+$enable-grid-classes:        false;
 
 // ===================================================================================
 // Color
@@ -103,6 +103,8 @@ $form-input-border:               2px solid $base-border-color;
 // Form Shadows
 $form-box-shadow:                  none; // eg: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus:            none; //eg: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+// A better designed select element (dropdows)
+$prettify-select-dropdown:         true;
 // CSS selectors - inputs   
 $all-text-inputs: 'input[type=text],
                    input[type=password],
