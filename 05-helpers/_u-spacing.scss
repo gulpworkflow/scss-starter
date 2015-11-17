@@ -1,10 +1,10 @@
-/* 
+/*
 //=====
 name: "Spacers";
 slug: utlities/spacers;
 description: [
-Special classes that are used to 
-];  
+Special classes that are used to
+];
 =====//
 */
 
@@ -92,5 +92,5 @@ $multiplier-large:     3;
   top: 0;
   right: 0;
   left: 0;
-  z-index: $zindex-navbar-fixed;
+  z-index: z(modal);
 }

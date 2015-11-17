@@ -1,4 +1,4 @@
-/* 
+/*
 //=====
 name: "Buttons";
 slug: buttons;
@@ -6,7 +6,7 @@ description: [
   #Buttons
   ### buttons are done as a SASS variable, eg:
   $all-buttons: '.btn, button, input[type=submit], input[type=button]';
-];  
+];
 usage: [
   <a class="btn">I'm a link button</a>
   <input type="submit">I'm a submit button</a>
@@ -18,23 +18,37 @@ usage: [
 // ===================================================================================
 //  Variables
 // -------------
-// CSS selectors - buttons                   
-$all-buttons:     '.btn, 
-                   button, 
-                   input[type=submit], 
+// CSS selectors - buttons
+$all-buttons:     '.btn,
+                   button,
+                   input[type=submit],
                    input[type=button]' !default;
+
+// Primary button
+$primary-button-background-color:     $brand-primary-color;
+$primary-button-border-color:         $brand-primary-color;
+$primary-button-text-color:     $white;
+// Secondary button
+$secondary-button-background-color:     transparent;
+$secondary-button-border-color:         $white;
+$secondary-button-text-color:           $white;
+// Tertiary button
+$tertiary-button-background-color:     $brand-primary-color;
+$tertiary-button-border-color:         $brand-primary-color;
+$tertiary-button-text-color:           $white;
+
 
 // ===================================================================================
 //  Button Styles
 #{$all-buttons} {
   appearance: none;
-  background-color: $ui-color-action;
-  border: 0;
+  background-color: $primary-button-background-color;
+  border: 3px solid $primary-button-border-color;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $primary-button-text-color;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family:$bold-font-family;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: $base-font-family-bold;
@@ -59,5 +73,21 @@ $all-buttons:     '.btn,
     &:hover {
       background-color: $ui-color-action;
     }
+  }
+
+  &.secondary {
+    background-color: $secondary-button-background-color;
+    color: $secondary-button-text-color;
+    border: 3px solid $secondary-button-border-color;
+
+    &:hover {
+      background-color: $brand-primary-color;
+      color: $white !important;
+    }
+  }
+
+  &.dark {
+    color: $brand-primary-color !important;
+    border-color: $brand-primary-color !important;
   }
 }

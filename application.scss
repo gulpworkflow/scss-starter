@@ -1,38 +1,29 @@
-// ripe scss 
+//---------------------------
+//
+// ripe scss
 // http://ripe.com/
 // MIT License
+//
+//
+//---------------------------
 
 // ===================================================================================
-// 00 - BASE
-// -------------
 // Variables
 // -------------
-@import "00-base/variables";
-// Grid
+@import "00-variables/_all";
+// Functions
 // -------------
-@import "00-base/grid/all";
-// Utilities
+@import "01-functions/_all";
+// Mixins
 // -------------
-@import "00-base/utilities/clear";
-@import "00-base/utilities/font-face";
-@import "00-base/utilities/responsive";
-@import "00-base/utilities/positioning";
-@import "00-base/utilities/z-index";
+@import "02-mixins/_all";
 // Base
 // -------------
-@import "00-base/icons";
-@import "00-base/buttons";
-@import "00-base/forms";
-@import "00-base/lists";
-@import "00-base/tables";
-@import "00-base/typography";
-
-// ===================================================================================
-// 01 - LAYOUTS
-// -------------
-@import "01-layouts/core";
-
-// ===================================================================================
+@import "03-base/_all";
 // Modules
 // -------------
-//@import "03-modules/**/*";
+@import "04-modules/*";  // @import "04-modules/_all";
+// Helpers
+// -------------
+@import "05-helpers/_all";
+// ===================================================================================

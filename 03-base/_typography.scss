@@ -1,4 +1,4 @@
-/* 
+/*
 //=====
 @name: "Typography"
 @slug: base/typography
@@ -9,51 +9,20 @@
   <h3>h3-h6. Heading</h3>
   <hr>
   <h1 id="paragraph">Paragraph</h1>
-  <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. 
-  Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, 
+  <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est.
+  Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
   gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. M
   aecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy.</p>
 ]
 =====//
 */
 
-// ===================================================================================
-// Type styles
-// ------------
-/* Good design relies on the consistent & intelligent use of a few type styles. 
-   Define this core set of type styles below, and use them with purpose throughout 
-   this interactive product.  
 
-   It may be a good idea to avoid including color in these mixins. Color largely depends on 
-   state, and therefore should be flexible (eg: link vs. title, active vs. visited, success vs. warning etc). 
-   For some projects though, you should include color below.  You'll need to use your expertise
-   as a designer. 
-*/
-@mixin header-1 {
-  font-size: $base-font-size * 2.25;
-  line-height: 1.2;
-}
-
-@mixin header-2 {
-  font-size: $base-font-size * 1.5;
-  line-height: 1.2;
-}
-
-@mixin header-3 {
-  font-size: $base-font-size * 1;
-  line-height: 1.2;
-}
-
-@mixin body-copy {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-}
 
 // ===================================================================================
 // Core typographic selectors
 // ------------
-// 
+//
 html {
   font-size: $root-font-size;
 }
@@ -82,7 +51,7 @@ h3,.h3 {
 }
 
 // only user h4-h6 selectively.  h5, // Most apps don't need 6 headings; 3 should be sufficient
-h4,h5,h6 
+h4,h5,h6
 {
   @include header-3;
   margin: 0 0 $small-spacing;
@@ -120,4 +89,35 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+/* Section Labels are primarily used as titles on each homepage section  */
+.sectionLabel {
+  @include label;
+  margin-bottom: 1rem;
+  color: $brand-primary-color;
+}
+
+/* Two Col Text is a style that separates paragraphs into columns and sets their internal gutters by even/odd
+   pseudo-elements.  This lets us control the internal column gutter indepedently of grid gutter.  */
+.twoColText {
+  padding-bottom: 1.5rem;
+
+  @include media-breakpoint-up(sm) {
+    p:nth-child(odd) {
+      float: left;
+      width: 50%;
+      padding-left: $base-spacing;
+      padding-top: $base-spacing;
+      text-align: left;
+    }
+
+    p:nth-child(even) {
+      float: left;
+      width: 50%;
+      padding-right: $base-spacing;
+      padding-top: $base-spacing;
+      text-align: left;
+    }
+  }
 }

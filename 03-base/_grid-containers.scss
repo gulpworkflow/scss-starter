@@ -1,3 +1,13 @@
+/*
+//=====
+name: "Grid Containers";
+slug: base/grid-containers
+description: [
+  These are the main wrappers for content that contain the grid
+];
+=====//
+*/
+
 /* ========================================================================= */
 // Default Containers
 //
@@ -6,12 +16,42 @@ $spacer: $base-spacing;
 
 .container {
   @include make-container();
+  max-width: 870px;
   position: relative;
-  padding-top: $spacer;
+  padding-top: 0;
 }
 
 .row {
-  @include make-row();  
+  @include make-row();
+}
+
+.container.narrow {
+  max-width: 780px;
+}
+
+.container.no-gutter {
+  @include make-container(0);
+}
+
+.contentBlock {
+  @include make-container;
+  padding-top: $base-spacing * 3;
+  padding-bottom:  $base-spacing * 3;
+
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+  }
+}
+
+.contentBlock:nth-child(even) {
+  background-color: $light-gray;
+}
+
+.contentBlock p {
+  @include media-breakpoint-up(sm) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 
