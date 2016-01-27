@@ -14,16 +14,16 @@ description: [
  // Check the 'config.yml' file for the location of the template scss file. 
 
 @font-face {
-  font-family: "global-docs-icons";
-  src: url('../fonts/icons/global-docs-icons.eot');
-  src: url('../fonts/icons/global-docs-icons.eot?#iefix') format('eot'),
-    url('../fonts/icons/global-docs-icons.woff') format('woff'),
-    url('../fonts/icons/global-docs-icons.ttf') format('truetype'),
-    url('../fonts/icons/global-docs-icons.svg#global-docs-icons') format('svg');
+  font-family: "hello-world-icons";
+  src: url('../fonts/iconshello-world-icons.eot');
+  src: url('../fonts/iconshello-world-icons.eot?#iefix') format('eot'),
+    url('../fonts/iconshello-world-icons.woff') format('woff'),
+    url('../fonts/iconshello-world-icons.ttf') format('truetype'),
+    url('../fonts/iconshello-world-icons.svg#hello-world-icons') format('svg');
 }
 
 @mixin icon-styles {
-  font-family: "global-docs-icons";
+  font-family: "hello-world-icons";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   font-style: normal;

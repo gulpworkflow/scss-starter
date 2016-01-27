@@ -13,16 +13,16 @@
 @import "00-variables/_all";
 // Functions
 // -------------
-@import "01-functions/_all";
+@import "01-tools/_all";
 // Mixins
 // -------------
-@import "02-mixins/_all";
+@import "02-base/_all";
 // Base
 // -------------
-@import "03-base/_all";
+@import "03-objects/_all";
 // Modules
 // -------------
-@import "04-modules/*";  // @import "04-modules/_all";
+@import "04-components/*";  
 // Helpers
 // -------------
 @import "05-helpers/_all";

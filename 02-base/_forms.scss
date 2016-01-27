@@ -1,11 +1,11 @@
-/* 
+/*
 //=====
 name: "Fieldsets and Form Elements";
 slug: base/forms;
 description: [
 #Forms
 ### Forms description here
-];  
+];
 usage: [
  <fieldset>
     <form>
@@ -72,7 +72,7 @@ $form-box-shadow:                  none !default; // eg: inset 0 1px 3px rgba(#0
 $form-box-shadow-focus:            none !default; //eg: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 // A better designed select element (dropdows)
 $prettify-select-dropdown:         true;
-// CSS selectors - inputs   
+// CSS selectors - inputs
 $all-text-inputs: 'input[type=text],
                    input[type=password],
                    input[type=search],
@@ -82,7 +82,7 @@ $all-text-inputs: 'input[type=text],
                    input[type=date],
                    input[type=number],
                    input[type=time],
-                   textarea' !default;                
+                   textarea' !default;
 
 // ===================================================================================
 //  Field Groups
