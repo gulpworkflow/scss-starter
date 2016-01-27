@@ -1,17 +1,4 @@
 // ===================================================================================
-// Typography
-// -------------
-// Font Stacks
-$base-font-family:      "Brown-Light", Helvetica, sans-serif !default;
-$bold-font-family:      "Brown-Bold", Helvetica, sans-serif !default;
-// Weights
-$base-font-family-bold: 600;
-// Sizes
-$root-font-size:       16px;
-$base-font-size:       1rem;
-$base-line-height:     1.5;
-
-// ===================================================================================
 // Type styles
 // ------------
 /* Good design relies on the consistent & intelligent use of a few type styles.
@@ -23,8 +10,11 @@ $base-line-height:     1.5;
    For some projects though, you should include color below.  You'll need to use your expertise
    as a designer.
 */
+$default-font-family: 'Brown';
+$bold-font-family: 'Brown-Bold';
+
 @mixin header-1 {
-  font-family: "Brown-Bold";
+  font-family: $bold-font-family;
   font-size: $base-font-size * 1.6;
   line-height: 1.2;
 
@@ -38,7 +28,7 @@ $base-line-height:     1.5;
 }
 
 @mixin header-2 {
-  font-family: "Brown-Bold";
+  font-family: $bold-font-family;
   font-size: $base-font-size * 1.25;
   line-height: 1.4;
 
@@ -52,7 +42,7 @@ $base-line-height:     1.5;
 }
 
 @mixin header-3 {
-  font-family: "Brown-Bold";
+  font-family: $bold-font-family;
   font-size: $base-font-size;
   line-height: 1.2;
 }
@@ -65,13 +55,13 @@ $base-line-height:     1.5;
 }
 
 @mixin body-copy-large {
-  font-family: $base-font-family;
+  font-family: $default-font-family;
   font-size: $base-font-size * 1.15;
   line-height: $base-line-height;
 }
 
 @mixin body-copy {
-  font-family: $base-font-family;
+  font-family: $default-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }

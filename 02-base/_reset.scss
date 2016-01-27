@@ -41,3 +41,9 @@ html,body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

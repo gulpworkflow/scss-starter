@@ -85,11 +85,6 @@ hr {
   margin: $base-spacing 0;
 }
 
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
-}
 
 /* Section Labels are primarily used as titles on each homepage section  */
 .sectionLabel {
@@ -98,26 +93,4 @@ picture {
   color: $brand-primary-color;
 }
 
-/* Two Col Text is a style that separates paragraphs into columns and sets their internal gutters by even/odd
-   pseudo-elements.  This lets us control the internal column gutter indepedently of grid gutter.  */
-.twoColText {
-  padding-bottom: 1.5rem;
 
-  @include media-breakpoint-up(sm) {
-    p:nth-child(odd) {
-      float: left;
-      width: 50%;
-      padding-left: $base-spacing;
-      padding-top: $base-spacing;
-      text-align: left;
-    }
-
-    p:nth-child(even) {
-      float: left;
-      width: 50%;
-      padding-right: $base-spacing;
-      padding-top: $base-spacing;
-      text-align: left;
-    }
-  }
-}

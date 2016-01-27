@@ -1,15 +1,13 @@
 /*
 //=====
 name: "Variables";
-slug: base/variables;
+slug: variables;
 description: [ ];
 =====//
 */
-
-@import "colors";
-@import "grid-settings";
-@import "type-settings";
-@import "forms";
-@import "spacing";
-@import "z-layers";
-@import "animation";
+@import "v-colors";
+@import "v-grid";
+@import "v-forms";
+@import "v-spacing_sizing";
+@import "v-layers";
+@import "v-animation";
