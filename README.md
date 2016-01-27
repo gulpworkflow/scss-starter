@@ -1,5 +1,5 @@
 # scss-starter
-A nice and neat sass starter for any project! Inspired by [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss), [Bootstrap v4](http://v4-alpha.getbootstrap.com/), , [SUIT](https://suitcss.github.io/), [Dropbox Scooter](https://github.com/dropbox/scooter), [Inuit CSS](https://github.com/inuitcss), and [OOCSS](https://github.com/stubbornella/oocss/wiki)
+A nice and neat sass starter for any project! Inspired by [ITCSS](https://speakerdeck.com/dafed/managing-css-projects-with-itcss), [Bootstrap v4](http://v4-alpha.getbootstrap.com/), [SUIT](https://suitcss.github.io/), [Dropbox Scooter](https://github.com/dropbox/scooter), [Inuit CSS](https://github.com/inuitcss), and [OOCSS](https://github.com/stubbornella/oocss/wiki)
 # structure
 - **00 Variables** – _These are settings stored for later use.  While they are typically scss variables, they can include other settings that generate no visible CSS, such as keyframes._  
 
