@@ -1,5 +1,5 @@
 # scss-starter
-nice and neat sass starter for any project! Heavilty inspirated by [Dropbox Scooter](https://github.com/dropbox/scooter),[Bootstrap v4], ITCSS, SUIT, BEM, OOCSS
+A nice and neat sass starter for any project! Inspired by [Dropbox Scooter](https://github.com/dropbox/scooter), [Bootstrap v4](), [ITCSS](), [SUIT](), [BEM](), and [OOCSS]()
 # structure
 - **00 Variables** – _These are settings stored for later use.  While they are typically scss variables, they can include other settings that generate no visible CSS, such as keyframes._  
 
