@@ -28,14 +28,21 @@
 
 html {
   box-sizing: $box-sizing;
-  font-size: $root-font-size;
-  color: green;
+  font-size: $base-font-size;
 }
 
 html,body {
   height: 100%;
   padding: 0;
   margin: 0;
+}
+
+body {
+  @include body-copy;
+  color: $base-font-color;
+  font-feature-settings: "kern", "liga", "pnum";
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *:before, *:after {

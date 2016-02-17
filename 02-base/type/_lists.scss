@@ -1,0 +1,74 @@
+/*
+//=====
+name: "Lists";
+slug: base/lists;
+description: [ ];
+usage: [
+  <dl>
+    <dt>Definition List Title</dt>
+    <dd>This is a definition list division.</dd>
+  </dl>
+
+  <h3>Ordered List</h3>
+  <ol>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+    <li>List Item 3</li>
+  </ol>
+
+  <h3>Unordered List</h3>
+  <ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+      </ul>
+    <li>List Item 3</li>
+  </ul>
+];
+=====//
+*/
+
+ul,
+ol,
+ul.default,
+ol.default {
+  margin-top: 0;
+  margin-bottom: $small-spacing;
+  padding-left: $base-spacing;
+}
+
+ul ul, ol ul {
+  margin-bottom: 0;
+  list-style-type: circle;
+}
+
+ol ol {
+  margin-bottom: 0;
+}
+
+ol,
+ol.default {
+  list-style-type: decimal;
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

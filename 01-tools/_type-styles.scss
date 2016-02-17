@@ -10,8 +10,23 @@
    For some projects though, you should include color below.  You'll need to use your expertise
    as a designer.
 */
-$default-font-family: 'Brown';
-$bold-font-family: 'Brown-Bold';
+$default-font-family: 'Helvetica Neue';
+$bold-font-family: 'Helvetica Neue';
+
+@mixin header-jumbo {
+  font-family: $bold-font-family;
+  font-size: $base-font-size * 2.5;
+  font-weight: 900;
+  line-height: 1.2;
+
+  @include media-breakpoint-down(md) {
+    font-size: $base-font-size * 1.75;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $base-font-size * 1.3;
+  }
+}
 
 @mixin header-1 {
   font-family: $bold-font-family;
