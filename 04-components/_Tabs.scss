@@ -1,0 +1,34 @@
+.accordion-tabs {
+
+  @include clearfix;
+  padding: 0;
+
+  .tab-header-and-content {
+    list-style: none;
+    @include media-breakpoint-up(md) {
+      display: inline;
+    }
+  }
+
+  .tab-link {
+    display: block;
+    padding-right: 1em;
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+    }
+  }
+
+  .is-active {
+    color: #ff0000;
+  }
+
+  .tab-content {
+    display: none;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      float: left;
+    }
+  }
+}
