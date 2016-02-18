@@ -1,0 +1,24 @@
+$radio-size: 1rem;
+
+input[type="radio"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}
+
+input[type="radio"] + label::before {
+  @extend %form-style;
+  content: '';
+  width: $radio-size;
+  height: $radio-size;
+  margin-right: $radio-size / 2;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::before {
+    content: '';
+    background-color: #666;
+    //border: 3px solid #fff;
+    //margin: .5rem;
+    //transform: scale(.7);
+}

@@ -98,7 +98,7 @@ input,
 label,
 select {
   display: block;
-  font-family: $base-font-family;
+  //font-family: $base-font-family;
   font-size: $base-font-size;
 }
 
@@ -118,10 +118,9 @@ label {
 // ===================================================================================
 // Text Inputs
 // -------------
-#{$all-text-inputs},
-select[multiple=multiple],
-select {
-  background-color: $form-input-background-color;
+#{$all-text-inputs} {
+  @extend %form-style;
+  /*background-color: $form-input-background-color;
   border: $form-input-border;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
@@ -150,7 +149,7 @@ select {
     &:hover {
       border: $base-border;
     }
-  }
+  }*/
 }
 
 textarea {
@@ -161,134 +160,9 @@ input[type="search"] {
   appearance: none;
 }
 
-// ===================================================================================
-// Checkbox / Radio
-// -------------
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-  margin-right: $small-spacing / 2;
 
-  + label {
-    display: inline-block;
-  }
-}
-
-input[type="file"] {
-  margin-bottom: $small-spacing;
-  width: 100%;
-}
-
-select {
-  margin-bottom: $base-spacing;
-  max-width: 100%;
-  width: auto;
-}
 
 // ===================================================================================
 // Select
 // -------------
 
-/*.select {
-  position: relative;
-  display: inline-block;
-  color: #555;
-}
-.select */
-select {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  cursor: pointer;
-  outline: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-/* Undo the Firefox inner focus ring */
-select:focus:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-/* Dropdown arrow */
-select:after {
-  position: absolute;
-  top: 50%;
-  right: 1.25rem;
-  display: inline-block;
-  content: "";
-  width: 0;
-  height: 0;
-  margin-top: -.15rem;
-  pointer-events: none;
-  border-top: .35rem solid;
-  border-right: .35rem solid transparent;
-  border-bottom: .35rem solid transparent;
-  border-left: .35rem solid transparent;
-}
-
-/* Hover state */
-/* Uncomment if you need it, but be aware of the sticky iOS states.
-.select select:hover {
-  background-color: #ddd;
-}
-*/
-
-/* Focus */
-select:focus {
-  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
-}
-
-/* Active/open */
-.select:active {
-  color: #fff;
-  background-color: #0074d9;
-}
-
-/* Hide the arrow in IE10 and up */
-select::-ms-expand {
-  display: none;
-}
-
-/* Media query to target Firefox only */
-@-moz-document url-prefix() {
-  /* Firefox hack to hide the arrow */
-  select {
-    text-indent: 0.01px;
-    text-overflow: '';
-    padding-right: 1rem;
-  }
-
-  /* <option> elements inherit styles from <select>, so reset them. */
-  option {
-    background-color: #fff;
-  }
-}
-
-/* IE9 hack to hide the arrow */
-@media screen and (min-width:0\0) {
-  select {
-    z-index: 1;
-    padding: .5rem 1.5rem .5rem 1rem;
-  }
-  select:after {
-    z-index: 5;
-  }
-  select:before {
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    bottom: 0;
-    z-index: 2;
-    content: "";
-    display: block;
-    width: 1.5rem;
-    background-color: #eee;
-  }
-  select:hover,
-  select:focus,
-  select:active {
-    color: #555;
-    background-color: #eee;
-  }
-}

@@ -4,7 +4,20 @@
 //
 //---------------------------
 //@import "fonts";
+
+%form-style {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: .2rem;
+  padding: .5rem;
+}
+
+
 @import "select";
+@import "checkbox";
+@import "radio";
+@import "text-input";
 /*
 @import "lists";
 @import "pullquotes";*/
