@@ -8,6 +8,7 @@ $dark-gray:                         #333;
 $medium-gray:                       #D8E1EC;
 $light-gray:                        #EDF1F5;
 $white:                             #F9FBFB;
+$blue:                              blue;
 $orange:                            #F1955C;
 // Font Colors
 $base-font-color:                   $dark-gray;
@@ -18,7 +19,7 @@ $base-border:                       1px solid $base-border-color;
 $base-background-color:             #fff;
 $secondary-background-color:        tint($base-border-color, 75%);
 // UI Action
-$ui-color-action:                   $orange;
+$ui-color-action:                   $blue;
 $ui-color-action-hover:             $brand-secondary-color;
 // UI Success
 $ui-color-success:                  #39b25d;

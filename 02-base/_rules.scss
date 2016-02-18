@@ -1,7 +1,16 @@
-hr {
+hr,
+.hr {
   border-bottom: $base-border;
   border-left: 0;
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+.vertical-rule {
+  border-left: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 0 $base-spacing;
 }

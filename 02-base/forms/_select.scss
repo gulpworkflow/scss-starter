@@ -1,0 +1,137 @@
+/*select {
+   @extend %form-style;
+
+    display: block;
+    width: 100%;
+    padding: 7px;
+    font-size: 13px;
+    color: #47525d;
+    border: 1px solid rgba(37,40,43,0.1);
+    border-radius: 3px;
+    background-clip: padding-box;
+
+      background-image: url('data:image/svg+xml;utf8,<svg width="7" height="14" viewBox="0 0 7 14" xmln…-.736-.36-.415-.81L2.922.337z" fill="#7B8994" fill-rule="evenodd"/></svg>');
+  background-size: 7px 14px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  padding-right: 27px;
+}*/
+
+
+
+/*.select {
+  position: relative;
+  display: inline-block;
+  color: #555;
+}
+.select */
+
+select {
+  @extend %form-style;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  outline: 0;
+
+  background-clip: padding-box;
+
+  background-image: url('data:image/svg+xml;utf8,<svg width="7" height="14" viewBox="0 0 7 14" xmlns="http://www.w3.org/2000/svg"><title>icon-form-dropdown</title><path d="M2.922 13.664c.32.447.836.45 1.157 0l2.763-3.86c.32-.447.135-.81-.414-.81H.57c-.55 0-.736.36-.415.81l2.765 3.86zm0-13.328c.32-.447.836-.45 1.157 0l2.763 3.86c.32.447.135.81-.414.81H.57c-.55 0-.736-.36-.415-.81L2.922.337z" fill="#7B8994" fill-rule="evenodd"/></svg>');
+
+  background-size: 7px 14px;
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  padding-right: 27px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+}
+/* Undo the Firefox inner focus ring */
+select:focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+/* Dropdown arrow */
+/*select:after {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: -.15rem;
+  pointer-events: none;
+  border-top: .35rem solid;
+  border-right: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+  border-left: .35rem solid transparent;
+}*/
+
+/* Hover state */
+/* Uncomment if you need it, but be aware of the sticky iOS states.
+.select select:hover {
+  background-color: #ddd;
+}
+*/
+
+/* Focus */
+select:focus {
+  box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+/* Active/open */
+.select:active {
+  color: #fff;
+  background-color: #0074d9;
+}
+
+/* Hide the arrow in IE10 and up */
+select::-ms-expand {
+  display: none;
+}
+
+/* Media query to target Firefox only */
+@-moz-document url-prefix() {
+  /* Firefox hack to hide the arrow */
+  select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding-right: 1rem;
+  }
+
+  /* <option> elements inherit styles from <select>, so reset them. */
+  option {
+    background-color: #fff;
+  }
+}
+
+/* IE9 hack to hide the arrow */
+@media screen and (min-width:0\0) {
+  select {
+    z-index: 1;
+    padding: .5rem 1.5rem .5rem 1rem;
+  }
+  select:after {
+    z-index: 5;
+  }
+  select:before {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    bottom: 0;
+    z-index: 2;
+    content: "";
+    display: block;
+    width: 1.5rem;
+    background-color: #eee;
+  }
+  select:hover,
+  select:focus,
+  select:active {
+    color: #555;
+    background-color: #eee;
+  }
+}

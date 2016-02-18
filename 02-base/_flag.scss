@@ -1,0 +1,48 @@
+//-----------------------------
+//
+// Flag object
+// ===========
+//
+// Modified version of Harry Roberts' flag object
+// (http://csswizardry.com/2013/05/the-flag-object/)
+
+// Similar to the media object. Used to vertically align a fluid-width element
+// and a fixed-width element next to one another.
+
+.flag {
+    display: table;
+    margin: $small-spacing 0;
+    width: 100%;
+}
+
+.flag-image,
+.flag-body {
+    display: table-cell;
+    vertical-align: middle;
+
+    &.top {
+        vertical-align: top;
+    }
+
+    &.bottom {
+        vertical-align: bottom;
+    }
+}
+
+.flag-image {
+    padding-right: 10px;
+
+    > img {
+        display: block;
+        max-width: none;
+    }
+
+    &.reverse {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+}
+
+.flag-body {
+    width: 100%;
+}

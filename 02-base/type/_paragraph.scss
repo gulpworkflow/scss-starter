@@ -1,0 +1,31 @@
+/*
+//=====
+@name: "Typography"
+@slug: base/typography
+@description: [ ]
+@usage: [
+  <h1>h1. Heading</h1>
+  <h2>h2. Heading</h2>
+  <h3>h3-h6. Heading</h3>
+  <hr>
+  <h1 id="paragraph">Paragraph</h1>
+  <p>Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est.
+  Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec,
+  gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. M
+  aecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy.</p>
+]
+=====//
+*/
+
+p,
+.paragraph {
+  @include body-copy;
+  margin: 0 0 $small-spacing;
+  color: $base-font-color;
+  font-feature-settings: "kern", "liga", "pnum";
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+
