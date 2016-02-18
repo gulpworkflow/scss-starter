@@ -6,7 +6,7 @@ $modal-boarder: 1px solid #aaa;
 $transition-speed: 200ms;
 
 .Overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
