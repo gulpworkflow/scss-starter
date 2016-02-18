@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.NavBar-homeAnchor {
+.NavBar-anchor {
   float: left;
 
   @include media-breakpoint-up(sm) {
@@ -19,7 +19,7 @@
   }
 }
 
-.NavBar .NavBar-homeAnchor .NavBar-logo {
+.NavBar .NavBar-anchor .NavBar-logo {
   max-height: 2em;
   padding-right: 1em;
 }
@@ -54,7 +54,7 @@
   }
 }
 
-.NavBar .NavBar-menuItem{
+.NavBar .NavBar-item{
   display: block;
   width: 100%;
   text-align: right;
@@ -67,7 +67,7 @@
   }
 }
 
-.NavBar .NavBar-menuLink {
+.NavBar .NavBar-link {
   display: inline-block;
 
   @include media-breakpoint-up(md) {

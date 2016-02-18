@@ -1,0 +1,121 @@
+// Local Variables
+$feature-block-mobile-width: 70%;
+$feature-block-width: 40%;
+$feature-block-height: 40%;
+$min-height-mobile: 15em;
+$min-height-breakpoint-1: 25em;
+$min-height-breakpoint-2: 25em;
+$feature-block-spacing: $base-spacing*4;
+$feature-block-bg-color: #f5f5f5;
+$feature-overlay-color: rgba(22, 22, 255, 0.7);
+
+
+.FeatureBlock {
+  position: relative;
+  width: 100%;
+  height: $feature-block-height;
+  min-height: $min-height-mobile;
+  background-color: $feature-block-bg-color;
+
+  @include media-breakpoint-up(sm) {
+    min-height: $min-height-breakpoint-1;
+  }
+
+  @include media-breakpoint-up(md) {
+    min-height: $min-height-breakpoint-2;
+  }
+}
+
+.featureBlock.imgBkg {
+  background-image: url(http://www.fillmurray.com/g/1200/900);
+  background-position: center;
+  background-size: cover;
+}
+
+.FeatureBlock-videoBkg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.FeatureBlock-video {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featureBlock-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &.color-overlay {
+    background-color: $feature-overlay-color;
+  }
+}
+
+.FeatureBlock-content {
+  position: absolute;
+  width: $feature-block-mobile-width;
+
+  @include media-breakpoint-up(sm) {
+    width: $feature-block-width;
+  }
+
+  /* Postioning of Content:
+  x, y:  
+  c = centered
+  t = top
+  b = bottom
+  l = left
+  r = right
+  */
+  // Centered
+  &.c-c {
+    @include centerer(true, true);
+  }
+  //Centered Top
+  &.c-t {
+    margin-top: $feature-block-spacing;
+    @include centerer(true, false);
+  }
+  // Centered Left
+  &.c-l {
+    margin-left: $feature-block-spacing;
+    @include centerer(false, true);
+  }
+  // Centered Right
+  &.c-r {
+    right: 0%;
+    margin-right: $feature-block-spacing;
+    @include centerer(false, true);
+  }
+  // Left Top
+  &.l-t {
+    margin-top: $feature-block-spacing;
+    margin-left: $feature-block-spacing;
+  }
+  // Left Bottom
+  &.l-b {
+    bottom: 0%;
+    margin-bottom: $feature-block-spacing;
+    margin-left: $feature-block-spacing;
+  }
+  // Right Top
+  &.r-t {
+    right: 0%;
+    margin-top: $feature-block-spacing;
+    margin-right: $feature-block-spacing;
+  }
+  // Right Bottom
+  &.r-b {
+    bottom: 0%;
+    right: 0%;
+    margin-bottom: $feature-block-spacing;
+    margin-right: $feature-block-spacing;
+  }
+}

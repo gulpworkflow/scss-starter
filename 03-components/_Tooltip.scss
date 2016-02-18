@@ -1,0 +1,43 @@
+// Local Variables
+$transition: all 0.2s ease-out;
+$tooltip-width: 12em;
+
+.Tooltip-item {  
+  display: inline-block;
+  position: relative;
+  text-align: center;
+
+  &:focus .Tooltip,
+  &:hover .Tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.Tooltip {
+  position: absolute;
+  bottom: 3em;
+  width: $tooltip-width;
+  margin-left: -2em;
+  background-color: #f5f5f5;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: $transition;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1em;
+    font-size: 1.4em;
+    text-align: center;
+    color: #f5f5f5;
+    content: "▼";
+  }
+}
+
+.Tooltip-content {
+  margin-bottom: 0;
+}

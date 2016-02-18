@@ -1,0 +1,88 @@
+// Local Variables
+$large-screen: 50em !default;
+$centered-navigation-height: 60px;
+$centered-navigation-logo-height: 2em;
+
+.NavBarCentered {
+  width: 100%;
+}
+
+.NavBarCentered .NavBar-mobileAnchor {
+  display: inline;
+  float: left;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+
+  .NavBar-MobileLogo {
+    max-height: $centered-navigation-logo-height;
+  }
+}
+
+.NavBarCentered .NavBarCentered-mobileToggle {
+  float: right;
+  padding-top: 0.5em;
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.NavBarCentered-wrapper {
+  @include clearfix;
+  position: relative;
+}
+
+.NavBarCentered-menu {
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+    text-align: center;
+  }
+
+  &.show {
+    display: block;
+  }
+}
+
+.NavBarCentered-menu .NavBar-item {
+  display: block;
+  text-align: right;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    display: inline;
+  }
+
+  &:last-child a {
+    padding-right: 0;
+  }
+
+  .NavBar-link {
+    display: inline-block;
+    @include media-breakpoint-up(md) {
+      padding-right: 1em;
+    }
+  }
+}
+
+.NavBarCentered-menu .NavBar-item.logo {
+  display: none;
+  line-height: 0;
+  
+  @include media-breakpoint-up(md) {
+    display: inline;
+  }
+}
+
+.NavBarCentered-menu .NavBar-logo {
+  margin-bottom: -$centered-navigation-logo-height / 3;
+  max-height: $centered-navigation-logo-height;
+}

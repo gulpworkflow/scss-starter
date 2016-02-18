@@ -1,0 +1,41 @@
+// Local Variables
+$dropdown-distance-from-menu: 50px;
+$transition: all 0.2s ease-out;
+
+.Dropdown-container {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.Dropdown-description {
+  float: left;
+  padding-right: $base-spacing;
+}
+
+.Dropdown-button {
+  cursor: pointer;
+  float: right;
+  position: relative;
+
+  &:after {
+    display: block;
+    position: absolute;
+  }
+}
+
+.Dropdown-menu {
+  cursor: pointer;
+  display: none;
+  overflow: show;
+  position: absolute;
+  text-align: left;
+  top: $dropdown-distance-from-menu;
+  width: 228px;
+  z-index: 99999;
+  transition: $transition;
+}
+
+.Dropdown .show-menu {
+  display: block;
+}
