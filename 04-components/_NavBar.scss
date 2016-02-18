@@ -1,0 +1,88 @@
+// Local Variables
+
+.NavBar-wrapper {
+  @include clearfix;
+  position: relative;
+}
+
+.NavBar-homeAnchor {
+  float: left;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
+}
+
+.NavBar .NavBar-homeAnchor .NavBar-logo {
+  max-height: 2em;
+  padding-right: 1em;
+}
+
+.NavBar .NavBar-menuWrapper {
+  float: none;
+
+  @include media-breakpoint-up(sm) {
+    float: left;
+    padding-top: 0.3em;
+    text-align: center;
+    line-height: 1.5em;
+  }
+}
+
+.NavBar .NavBar-menu {
+  display: none;
+  clear: both;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+
+  &.show {
+    display: block;
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.NavBar .NavBar-menuItem{
+  display: block;
+  width: 100%;
+  text-align: right;
+
+  @include media-breakpoint-up(sm) {
+    display: inline;
+    width: auto;
+    text-decoration: none;
+    background: transparent;
+  }
+}
+
+.NavBar .NavBar-menuLink {
+  display: inline-block;
+
+  @include media-breakpoint-up(md) {
+    padding-right: 1em;
+  }
+}
+
+// Mobile Nav
+.NavBar .NavBar-mobileToggle {
+  display: block;
+  float: right;
+  margin: 0;
+  padding-top: 0.5em;
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}

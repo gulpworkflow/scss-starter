@@ -1,29 +1,31 @@
-.button-group { 
+// Local Variables
+$active-button-color: #ff0000;
+
+.ButtonGroup { 
   @include clearfix;
-  input {
-    display: none;
+}
+
+.ButtonGroup input {
+  display: none;
+}
+
+.ButtonGroup .ButtonGroup-item {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
   }
+}
 
-  label {
-    font-weight: normal;
-
-    @include media-breakpoint-up(md) {
-      float: left;
-      padding: 0 0.5em;
-    }
+.ButtonGroup .ButtonGroup-item-wrap {
+  @include media-breakpoint-up(md) {
+    float: left;
+    padding: 0 $base-spacing/2;
   }
+}
 
-  .button-group-item {
-    cursor: pointer;
-    display: inline-block;
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: auto;
-    }
-  }
-
-  input:checked + .button-group-item {
-    color: #ff0000;
-  }
+.ButtonGroup input:checked + .ButtonGroup-item {
+  color: $active-button-color;
 }
