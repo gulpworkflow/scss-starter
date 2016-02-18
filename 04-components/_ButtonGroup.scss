@@ -1,0 +1,31 @@
+// Local Variables
+$active-button-color: #ff0000;
+
+.ButtonGroup { 
+  @include clearfix;
+}
+
+.ButtonGroup input {
+  display: none;
+}
+
+.ButtonGroup .ButtonGroup-item {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
+  }
+}
+
+.ButtonGroup .ButtonGroup-item-wrap {
+  @include media-breakpoint-up(md) {
+    float: left;
+    padding: 0 $base-spacing/2;
+  }
+}
+
+.ButtonGroup input:checked + .ButtonGroup-item {
+  color: $active-button-color;
+}

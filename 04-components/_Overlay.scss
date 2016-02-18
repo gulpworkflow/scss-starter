@@ -1,0 +1,79 @@
+// Local variables
+$max-modal-width: 300px;
+$overlay-bg-color-light: rgba(255,255,255,0.5);
+$overlay-bg-color-dark: rgba(0,0,0,0.5);
+$modal-boarder: 1px solid #aaa;
+$transition-speed: 200ms;
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  width: 100%;
+  height: 100%;
+  background: $overlay-bg-color-dark;
+  visibility: hidden;
+  opacity: 0;
+  
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.Overlay.light {
+  background: $overlay-bg-color-light;
+}
+
+.Overlay-cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.Overlay-modal {
+  position: relative;
+  max-width: $max-modal-width;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $base-spacing;
+  padding: 20px;
+  background: #fff;
+ 
+  .light & {
+    border: $modal-boarder;
+  }
+}
+
+.Overlay.centered .Overlay-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Overlay-close {
+  position: absolute;
+  top: $base-spacing;
+  right: $base-spacing;
+  width: $base-spacing;
+  height: $base-spacing;
+  text-decoration: none;
+  color: #666;
+  
+  &:hover {
+    color: darken(#666, 15%);
+  }
+}
+
+.Overlay-content {
+  margin-top: $base-spacing;
+  overflow: auto;
+}

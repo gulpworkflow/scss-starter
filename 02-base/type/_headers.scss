@@ -18,6 +18,25 @@
 */
 
 
+
+
+
+// ===================================================================================
+// Core typographic selectors
+// ------------
+//
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  @include body-copy;
+  color: $base-font-color;
+  font-feature-settings: "kern", "liga", "pnum";
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 .jumbo {
   @include header-jumbo;
   margin: 0 0 $base-spacing;

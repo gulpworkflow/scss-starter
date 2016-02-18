@@ -1,0 +1,36 @@
+// Local Variables
+$active-tab-color: #ff0000;
+
+.Tabs {
+  padding: 0;
+  @include clearfix;
+}
+
+.Tabs .is-active {
+  color: $active-tab-color;
+}
+
+.Tabs .Tab-item {
+  list-style: none;
+
+  @include media-breakpoint-up(md) {
+    display: inline;
+  }
+}
+
+.Tabs .Tab-item .Tab-link {
+  display: block;
+  padding-right: 1em;
+
+  @include media-breakpoint-up(md) {
+    display: inline-block;
+  }
+}
+
+.Tabs .Tab-item .Tab-content {
+  display: none;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    float: left;
+  }
+}
