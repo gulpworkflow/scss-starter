@@ -3,13 +3,11 @@
 //
 
 // Alignment
-
 .text-justify        { text-align: justify !important; }
 .text-nowrap         { white-space: nowrap !important; }
-.text-truncate       { @include text-truncate; }
+.text-truncate       { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 // Responsive alignment
-
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     .text-#{$breakpoint}-left   { text-align: left !important; }
@@ -19,23 +17,29 @@
 }
 
 // Transformation
-
 .text-lowercase      { text-transform: lowercase !important; }
 .text-uppercase      { text-transform: uppercase !important; }
 .text-capitalize     { text-transform: capitalize !important; }
 
 // Weight and italics
-
 .font-weight-normal  { font-weight: normal; }
 .font-weight-bold    { font-weight: bold; }
 .font-italic         { font-style: italic; }
 
+// Underline
+.underline           { text-decoration: underline !important; }
+
+// Strike through
+.strike              {text-decoration: line-through !important;}
+
+// Break Word & No Wrap
+.force-break         { word-wrap: break-word !important; }
+.nowrap              { white-space: nowrap !important; }
+.wrap                { white-space: normal !important; }
+.word-break          { word-break: break-all !important; }
+
 // Contextual colors
-
-.text-muted {
-  color: $text-muted;
-}
-
+/*
 @include text-emphasis-variant('.text-primary', $brand-primary);
 
 @include text-emphasis-variant('.text-success', $brand-success);
@@ -45,9 +49,4 @@
 @include text-emphasis-variant('.text-warning', $brand-warning);
 
 @include text-emphasis-variant('.text-danger', $brand-danger);
-
-// Misc
-
-.text-hide {
-  @include text-hide();
-}
+*/

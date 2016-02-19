@@ -5,9 +5,9 @@ slug: variables;
 description: [ ];
 =====//
 */
+@import "animations/_all";
 @import "v-colors";
-@import "v-grid";
 @import "v-forms";
-@import "v-spacing_sizing";
+@import "v-grid";
 @import "v-layers";
-@import "v-animation";
+@import "v-spacing_sizing";

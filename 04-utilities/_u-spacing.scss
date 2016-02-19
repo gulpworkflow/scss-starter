@@ -52,7 +52,6 @@ $multiplier-large:     3;
 .m-y-lg { margin-top:    ($spacer-y * $multiplier-large) !important; margin-bottom: ($spacer-y * $multiplier-large) !important; }
 
 // Padding
-
 .p-a-0 { padding:        0 !important; }
 .p-t-0 { padding-top:    0 !important; }
 .p-r-0 { padding-right:  0 !important; }
@@ -84,13 +83,3 @@ $multiplier-large:     3;
 .p-l-lg { padding-left:   ($spacer-y * $multiplier-large) !important; }
 .p-x-lg { padding-right:  ($spacer-x * $multiplier-large) !important; padding-left:   ($spacer-x * $multiplier-large) !important; }
 .p-y-lg { padding-top:    ($spacer-y * $multiplier-large) !important; padding-bottom: ($spacer-y * $multiplier-large) !important; }
-
-// Positioning
-
-.pos-f-t {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: z(modal);
-}

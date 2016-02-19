@@ -1,0 +1,20 @@
+// ===================================================================================
+// Animation Timing
+// -------------
+$timing: (
+  scale: (
+    entranceEasing:   cubic-bezier(0.165, 0.84, 0.44, 1),
+    exitEasing:       cubic-bezier(0.165, 0.84, 0.44, 1),
+    duration:         300ms
+  ),
+  fade: (
+    entranceEasing:   cubic-bezier(0.36, 0.45, 0.67, 1),
+    exitEasing:       cubic-bezier(0.36, 0.45, 0.67, 1),
+    duration:         750ms
+  ),
+  slide: (
+    entranceEasing:   cubic-bezier(0.36, 0.45, 0.67, 1),
+    exitEasing:       cubic-bezier(0.36, 0.45, 0.67, 1),
+    duration:         300ms
+  )
+);

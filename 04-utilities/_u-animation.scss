@@ -1,0 +1,166 @@
+// ====================
+//
+// Animations
+//
+// ====================
+@function timingProp($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+//====================
+//
+// Scale
+//
+//====================
+.scale-up {
+  animation-name: scale-up;
+  animation-duration: timingProp($timing, "scale", "duration");
+  animation-timing-function: timingProp($timing, "scale", "entranceEasing");
+}
+
+.scale-down {
+  animation-name: scale-down;
+  animation-duration: timingProp($timing, "scale", "duration");
+  animation-timing-function: timingProp($timing, "scale", "exitEasing");
+}
+
+//====================
+//
+// Fade
+//
+//====================
+
+// Fade In
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "entranceEasing");
+}
+
+// Fade Out
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "exitEasing");
+}
+
+// Fade In Down
+.fade-inDown {
+  animation-name: fade-inDown;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "entranceEasing");
+}
+
+// Fade out Down
+.fade-outDown {
+  animation-name: fade-outDown;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "exitEasing");
+}
+
+// Fade In Up
+.fade-inUp {
+  animation-name: fade-inUp;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "entranceEasing");
+}
+
+// Fade out Up
+.fade-outUp {
+  animation-name: fade-outUp;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "exitEasing");
+}
+
+// Fade in Left
+.fade-inLeft {
+  animation-name: fade-inLeft;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "entranceEasing");
+}
+
+// Fade out Left
+.fade-outLeft {
+  animation-name: fade-outLeft;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "exitEasing");
+}
+
+// Fade In Right
+.fade-inRight {
+  animation-name: fade-inRight;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "entranceEasing");
+}
+
+// Fade Out Right
+.fade-outRight {
+  animation-name: fade-outRight;
+  animation-duration: timingProp($timing, "fade", "duration");
+  animation-timing-function: timingProp($timing, "fade", "exitEasing");
+}
+
+//====================
+//
+// Slide
+//
+//====================
+
+// Slide In Up
+.slide-inUp {
+  animation-name: slide-inUp;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "entranceEasing");
+}
+
+// Slide In Down
+.slide-inDown {
+  animation-name: slide-inDown;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "entranceEasing");
+}
+
+// Slide In Left
+.slide-inLeft {
+  animation-name: slide-inLeft;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "entranceEasing");
+}
+
+// Slide In Right
+.slide-inRight {
+  animation-name: slide-inRight;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "entranceEasing");
+}
+
+// Slide Out Up
+.slide-outUp {
+  animation-name: slide-outUp;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "exitEasing");
+}
+
+// Slide Out Down
+.slide-outDown {
+  animation-name: slide-outDown;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "exitEasing");
+}
+
+// Slide Out Left
+.slide-outLeft {
+  animation-name: slide-outLeft;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "exitEasing");
+}
+
+// Slide Out Right
+.slide-outRight {
+  animation-name: slide-outRight;
+  animation-duration: timingProp($timing, "slide", "duration");
+  animation-timing-function: timingProp($timing, "slide", "exitEasing");
+}

@@ -7,7 +7,6 @@
 }
 
 // Responsive visibility utilities
-
 @each $bp in map-keys($grid-breakpoints) {
   .hidden-#{$bp}-up {
     @include media-breakpoint-up($bp) {
@@ -20,7 +19,6 @@
     }
   }
 }
-
 
 // Print utilities
 //
@@ -54,10 +52,7 @@
   }
 }
 
-
-
 // Responsive utilities
-
 //
 // More easily include all the states for responsive-utilities.less.
 // [converter] $parent hack
@@ -77,5 +72,3 @@
     display: none !important;
   }
 }
-
-
