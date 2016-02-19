@@ -1,0 +1,322 @@
+<html>
+<head>
+  <title>Components</title>
+</head>
+<link rel="stylesheet" href="css/application.css" type="text/css">
+<body>
+
+<div class="container">
+<h1 class="jumbo m-t-lg">Components</h1>
+<!-- Tabs -->
+<hr class="m-t-md">
+<h1>Tabs</h1>
+<ul class="Tabs">
+  <li class="Tab-item">
+    <a href="javascript:void(0)" class="is-active Tab-link">Tab Item</a>
+    <div class="Tab-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt pellentesque lorem.Nullam imperdiet sapien id purus pretium id aliquam mi ullamcorper.</p>
+    </div>
+  </li>
+  <li class="Tab-item">
+    <a href="javascript:void(0)" class="Tab-link">Another Tab</a>
+    <div class="Tab-content">
+      <p>Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate.</p>
+    </div>
+  </li>
+  <li class="Tab-item">
+    <a href="javascript:void(0)" class="Tab-link">Third</a>
+    <div class="Tab-content">
+      <p>Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.</p>
+    </div>
+  </li>
+  <li class="Tab-item">
+    <a href="javascript:void(0)" class="Tab-link">Last Item</a>
+    <div class="Tab-content">
+      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.</p>
+    </div>
+  </li>
+</ul>
+<!-- END: Tabs -->
+<!-- Button Group -->
+<hr class="m-t-md">
+<h1>Button Group</h1>
+
+<div class="ButtonGroup">
+  <label class="ButtonGroup-item-wrap">
+    <input type="radio" name="ButtonGroup" value="item" checked>
+    <span class="ButtonGroup-item">Item</span>
+  </label>
+  <label class="ButtonGroup-item-wrap">
+    <input type="radio" name="ButtonGroup" value="other-item">
+    <span class="ButtonGroup-item">Other But Longer Item</span>
+  </label>
+  <label class="ButtonGroup-item-wrap">
+    <input type="radio" name="ButtonGroup" value="other-item">
+    <span class="ButtonGroup-item">Third</span>
+  </label>
+  <label class="ButtonGroup-item-wrap">
+    <input type="radio" name="ButtonGroup" value="third">
+    <span class="ButtonGroup-item">Last Item</span>
+  </label>
+</div>
+<!-- END: Button Group -->
+<!-- Expander -->
+<hr class="m-t-md">
+<h1>Expander</h1>
+
+<div class="Expander">
+  <a href="javascript:void(0)" class="Expander-trigger Expander-hidden">Expandable section</a>
+  <div class="Expander-content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio mollitia fugiat facilis enim accusamus quisquam aut, repellendus incidunt quod optio facere labore illo numquam ipsum beatae vero debitis, fugit excepturi.</p>
+  </div>
+</div>
+<!-- END: Expander -->
+
+<hr class="m-t-md">
+<!-- Overlay -->
+<h1>Overlay</h1>
+
+
+<a class="Overlay-trigger" href="#popup1">Click Me</a>
+
+<div class="Overlay centered" id="popup1">
+  <a class="Overlay-cancel" href="#"></a>
+  <div class="Overlay-modal">
+    <a class="Overlay-close" href="#">&times;</a>
+    <div class="Overlay-content">
+      <p>This is done totally without JavaScript. Just HTML and CSS.</p>
+    </div>
+  </div>
+</div>
+
+<!-- END: Overlay -->
+<hr class="m-t-md">
+<!-- NavBar -->
+<h1>NavBar</h1>
+
+<header class="NavBar">
+  <div class="NavBar-wrapper">
+    <a class="NavBar-anchor" href="javascript:void(0)">
+      <img class="NavBar-logo" src="https://placeholdit.imgix.net/~text?txtsize=33&&w=150&h=150&bg=f5f5f5&txtcolor=f5f5f5" alt="Logo Image">
+    </a>
+    <a class="NavBar-mobileToggle js-menu-toggle" href="#">Menu</a>
+    <nav class="NavBar-menuWrapper" role="navigation">
+      <ul class="NavBar-menu show js-NavBar-mainMenu">
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item I</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item II</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item II</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item IV</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item V</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Menu Item VI</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- END: NavBar -->
+<hr class="m-t-md">
+<!-- NavBarCentered -->
+<h1>NavBar Centered</h1>
+
+<header class="NavBarCentered">
+  <div class="NavBarCentered-wrapper">
+    <a class="NavBar-mobileAnchor" href="#">
+      <img class="NavBar-MobileLogo" src="https://placeholdit.imgix.net/~text?txtsize=33&&w=150&h=150&bg=f5f5f5&txtcolor=f5f5f5" alt="Logo image">
+    </a>
+    <a class="NavBarCentered-mobileToggle js-NavBarCentered-menu-toggle" href="#">Menu</a>
+    <nav role="navigation">
+      <ul class="NavBarCentered-menu js-NavBarCentered-mainMenu show">
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">About Us</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Contact</a>
+        </li>
+        <li class="NavBar-item logo">
+          <a class="NavBar-link logo" href="#">
+            <img class="NavBar-logo" src="https://placeholdit.imgix.net/~text?txtsize=33&&w=150&h=150&bg=f5f5f5&txtcolor=f5f5f5" alt="Logo image">
+          </a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Testimonials</a>
+        </li>
+        <li class="NavBar-item">
+          <a class="NavBar-link" href="#">Sign up</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- END: NavBarCentered -->
+<hr class="m-t-md">
+<!-- Switch -->
+<h1>Toggle Switch</h1>
+
+<label class="ToggleSwitch">
+  <input type="checkbox" />
+  <div class="checkbox"></div>
+</label>
+<!-- END: Switch -->
+<hr class="m-t-md">
+<!-- FeatureBlock -->
+<h1>Feature Block</h1>
+
+<!-- Default Feature Block -->
+<h2 class="m-t-md">Default</h2>
+
+<section class="FeatureBlock">
+  <div class="FeatureBlock-wrapper">
+    <div class="FeatureBlock-content c-c">
+      <h2>Headline</h2>
+      <p>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+  </div>
+</section>
+<!-- END: Default Feature Block -->
+<!-- Image BG Feature Block -->
+<h2 class="m-t-md">Image Background</h2>
+
+<section class="FeatureBlock imgBkg">
+  <div class="FeatureBlock-wrapper">
+    <div class="FeatureBlock-content c-c">
+      <h2>Headline</h2>
+      <p>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> 
+    </div>
+  </div>
+</section>
+<!-- END: Image BG Feature Block -->
+<!-- Image BG w/color overlay Feature Block -->
+<h2 class="m-t-md">Image Background with Color Overlay</h2>
+
+<section class="FeatureBlock imgBkg">
+  <div class="FeatureBlock-wrapper color-overlay">
+    <div class="FeatureBlock-content c-c">
+      <h2>Headline</h2>
+      <p>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> 
+    </div>
+  </div>
+</section>
+<!-- END: Image BG w/color overlay Feature Block -->
+<!-- Video Feature Block -->
+<h2 class="m-t-md">Video</h2>
+
+<section class="FeatureBlock">
+  <div class="FeatureBlock-videoBkg">
+    <video class="FeatureBlock-video" id="FeatureBlock-video" autoplay loop>
+      <source src="{{video-link}}.mp4" type="video/mp4">
+      <source src="{{video-link}}.ogv" type="video/ogg">
+      <source src="{{video-link}}.webm" type="video/webm">
+    </video>
+  </div>
+  <div class="FeatureBlock-wrapper">
+    <div class="FeatureBlock-content c-c">
+      <h2>Headline</h2>
+      <p>Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    </div>
+  </div>
+</section>
+<!-- END: Video Feature Block -->
+<!-- END: FeatureBlock -->
+<hr class="m-t-md">
+<!-- Dropdown -->
+<h1>Dropdown</h1>
+
+<div class="Dropdown">
+  <div class="Dropdown-container">
+    <p class="Dropdown-description">Description</p>
+    <p class="Dropdown-button">Click to Select</p>
+    <ul class="Dropdown-menu Dropdown-select">
+      <li>Dropdown Menu Item</li>
+      <li>Another Item</li>
+      <li>Item Three</li>
+      <li>The Last One</li>
+    </ul>
+  </div>
+</div>
+<!-- END: Dropdown -->
+<div class="p-t-lg"></div>
+<hr class="m-t-lg">
+<!-- Tooltip -->
+<h1>Tooltip</h1>
+<div class="p-t-lg"></div>
+
+<div class="Tooltip-item">
+  <p>Hover for Tooltip</p>
+  <div class="Tooltip">
+    <div class="Tooltip-content">
+      Lorem ipsum doldae oluptate aperiam unde voluptates quas.
+    </div>
+  </div>
+</div>
+<!-- END: Tooltip -->
+<hr class="m-t-lg">
+<!-- Animations -->
+<h1>Animations</h1>
+
+<div style="width: 25%; float: left;">
+  <ul class="p-l-0" style="list-style: none;">
+    <li><b>Scale</b></li>
+    <ul>
+      <li><a class="animation-trigger" data-animation-name="scale-up" href="#">Scale Up</a></li>
+      <li><a class="animation-trigger" data-animation-name="scale-down" href="#">Scale Down</a></li>
+    </ul>
+    <li><b>Fade</b></li>
+    <ul>
+    <li><a class="animation-trigger" data-animation-name="fade-in" href="#">Fade In</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-out" href="#">Fade Out</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-inDown" href="#">Fade In Down</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-outDown" href="#">Fade Out Down</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-inUp" href="#">Fade In Up</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-outUp" href="#">Fade Out Up</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-inLeft" href="#">Fade In Left</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-outLeft" href="#">Fade Out Left</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-inRight" href="#">Fade In Right</a></li>
+    <li><a class="animation-trigger" data-animation-name="fade-outRight" href="#">Fade Out Right</a></li>
+  </ul>
+    <li><b>Slide</b></li>
+    <ul>
+      <li><a class="animation-trigger" data-animation-name="slide-inUp" href="#">Slide In Up</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-inDown" href="#">Slide In Down</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-inLeft" href="#">Slide In Left</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-inRight" href="#">Slide In Right</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-outUp" href="#">Slide Out Up</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-outDown" href="#">Slide Out Down</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-outLeft" href="#">Slide Out Left</a></li>
+      <li><a class="animation-trigger" data-animation-name="slide-outRight" href="#">Slide Out Right</a></li>
+    </ul>
+  </ul>
+</div>
+<div style="width: 75%; float: left;">
+  <div id="animating-object" style="width: 150px;height: 150px; margin: 0 auto; background-color: blue;"></div>
+</div>
+<!-- END: Animations -->
+<!-- Spacer -->
+<div class="p-a-lg" style="clear: both;"></div>
+<!-- END: Spacer -->
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.animation-trigger').click(function(e) {
+      e.preventDefault();
+      var $trigger = $(this);
+      var $animatingObject = $('#animating-object');
+      var $currentAnimation = $trigger.attr('data-animation-name');
+      $animatingObject.removeClass();
+      $animatingObject.addClass($currentAnimation);
+    });
+  });
+</script>
+</html>
